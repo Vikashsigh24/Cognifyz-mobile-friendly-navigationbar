@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mobile firendly navigation menu</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Adding css ecternal file-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+
+        <ul class="ul">
+            <div id="hide">
+                <li class="active"><a href="#home">Home</a></li><!--active button color-->
+                <li><a href="#product">Products</a></li>
+                <li><a href="#category">Category</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+            </div>
+        </ul>
+        <!--Hamburger icon-->
+        <div class="hamburger">
+            <a href="#" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <h2>A mobile-friendly navigation
+            menu that collapses into a hamburger
+            menu on smaller screens using HTML
+            and CSS.</h2>
+    </div>
+    <!--For toggle a hamburger button using Java Script-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("hide");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
